@@ -1,0 +1,31 @@
+#main{
+    border: 10px solid orange;
+    display: flex; height: 100vh;
+    flex-direction: row; 
+    justify-content: center;
+   
+    
+}
+
+#add{
+    background-color: yellow;
+   
+}
+
+
+
+
+ #sub{    
+    
+    background: linear-gradient( to right, yellow 50%, blue 50%);
+   
+}
+
+#mul{
+    background-color: blue;   
+    color: pink;
+    
+} 
+#mulHeader{
+    color: pink;
+}
