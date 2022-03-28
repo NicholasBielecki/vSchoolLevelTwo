@@ -1,0 +1,79 @@
+.parent{
+    display: flex;
+    border: 5px solid black;
+    width: 95vw; height: 95vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+.child{
+    border: 5px dotted pink;
+    display: inline-block; width: 45vw; height: 20vh;
+    
+}
+
+
+
+#span1{
+ background-color: red;
+ z-index: 1;
+}
+#span1:hover{
+    background-color: purple;
+}
+#span1:active{
+    background-color: gray;
+}
+
+
+
+#span2{
+    background-color: blue;
+    transition-duration: 3s;
+}
+#span2:hover{
+    transition-duration: 5s;
+    transform: rotate(90deg);
+}
+
+
+
+
+
+#span3{
+    background-color: yellow;
+    
+}
+#span3:hover{
+    transform: scale(2);
+}
+
+#span4{
+    background-color: orange;
+}
+#span4:hover{
+    transform: scale(0.3);
+}
+
+#span5{
+    background-color: green;
+    transition: 3s;
+    
+}
+#span5:hover{
+    background-color: white;
+    transition-duration: 3s;
+    
+}
+#span6{
+    background-color: black;
+    transition: 3s;
+
+}
+#span6:hover{
+    transform: translate(5vw,5vh)
+    
+}
