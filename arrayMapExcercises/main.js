@@ -104,14 +104,14 @@
 
 // ```
 
-// ---
-                                //MY CODE!!!!!!!
-                                        // let names =  [
-                                        //     {name: "fred", age: 40},
-                                        //     {name: "mike", age: 20},
-                                        //     {name: "Taylor", age: 25}
-                                        // ]
-                                        // console.log(names.map(param1 => param1.name))
+
+                               
+                                        let names =  [
+                                            {name: "fred", age: 40},
+                                            {name: "mike", age: 20},
+                                            {name: "Taylor", age: 25}
+                                        ]
+                                        console.log(names.map(param1 => param1.name))
 
 
 // ### **5) Make an array of strings of the names saying whether or not they can go to The Matrix**

@@ -111,16 +111,16 @@
 //    // your code here
 // }
 
-// var arrays = [
-//     ["1", "2", "3"],
-//     [true],
-//     [4, 5, 6]
-// ];  
+var arrays = [
+    ["1", "2", "3"],
+    [true],
+    [4, 5, 6]
+];  
                                     //MY CODE!!!!!!
-                                            // console.log(arrays.reduce(function myFunc(final,current){
-                                            //    final = final.concat(current)
-                                            //     return final
-                                            // },[]))
+                                            console.log(arrays.reduce(function myFunc(final,current){
+                                               final = final.concat(current)
+                                                return final
+                                            },[]))
 
 
 

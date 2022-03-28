@@ -79,9 +79,7 @@
 
                                                 // console.log(array.filter(name => name.member === true))
 
-// ### **5) Make a filtered list of all the people who are old enough to see *The Matrix* (older than 18)**
 
-// ```
 // function ofAge(arr){
 //   // your code here
 // }
@@ -97,11 +95,11 @@
 // //[ { name: 'Angelina Jolie', age: 80 },
 // //  { name: 'Bob Ziroll', age: 100 } ]
 
-                                        // MY CODE!!!!
-                                            // const people = [{ name: "Angelina Jolie", age: 80 },
-                                            //     { name: "Eric Jones", age: 2 },
-                                            //     { name: "Paris Hilton", age: 5 },
-                                            //     { name: "Kayne West", age: 16 },
-                                            //     { name: "Bob Ziroll", age: 100 }]
+                                       
+                                            const people = [{ name: "Angelina Jolie", age: 80 },
+                                                { name: "Eric Jones", age: 2 },
+                                                { name: "Paris Hilton", age: 5 },
+                                                { name: "Kayne West", age: 16 },
+                                                { name: "Bob Ziroll", age: 100 }]
 
-                                            //     console.log(people.filter(person => person.age >= 18))
+                                                console.log(people.filter(person => person.age >= 18))

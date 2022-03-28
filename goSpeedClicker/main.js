@@ -16,7 +16,6 @@ let isRunning = true
 
 function stop (){
   isRunning = false
-  console.log(isRunning)
 }
 
 setTimeout(stop,3000)
