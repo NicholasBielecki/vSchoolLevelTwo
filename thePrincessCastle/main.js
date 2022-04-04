@@ -76,7 +76,7 @@ print(){
 let userCharacter = readlineSync.question("Press M if you want to play as Mario or L for Luigi")
 
 const newName = new player(userCharacter, 0, "powered up")
-newName.setName(userCharacter)
+// newName.setName(userCharacter)
 
 
 //Character Action
