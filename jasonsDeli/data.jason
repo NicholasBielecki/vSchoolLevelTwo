@@ -1,0 +1,64 @@
+{
+
+	"appitizers": [{
+			"name": "pretzel dip",
+			"ingredients": "ranch, wheat",
+			"description": "its pretzel dip"
+		},
+		{
+			"name": "soup",
+			"ingredients": "water, broth, chicken",
+			"description": "chicken like soup"
+		}
+	],
+
+	"cold sandwiches": [{
+			"name": "ham sandwiche",
+			"ingredients": "ham, bread",
+			"description": "just a ham sandwiche"
+		},
+		{
+			"name": "turkey sandwiche",
+			"ingredients": "turkey, bread",
+			"description": "just a turkey sandwiche"
+		}
+	],
+
+    "hot sandwiches":[
+        {
+        "name": "hot roast beef",
+        "ingredients": "bread, roast beef",
+        "description": "what do you think?"
+    },
+     {
+         "name": "meatball sandwiche",
+         "ingredients": "meatballs, bread",
+         "description": "just meatballs on bread dude"
+     }
+    ],
+"desserts":[
+    {
+        "name": "cake",
+        "ingredients": "cake mix, chocolate",
+        "description": "choclate cake bro"
+    },
+    {
+        "name": "ice cream",
+        "ingredients": "milk, choclate",
+        "description": "what do you think dude?"
+    }
+],
+"drinks":[
+    {
+        "name": "water",
+        "ingredients": "water",
+        "description": "cold water"
+    },
+    {
+        "name": "coke",
+        "ingredients": "who knows",
+        "description": "dont put it up your nose"
+    }
+]
+
+}
