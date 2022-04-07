@@ -1,15 +1,15 @@
-axios.get("https://api.vschool.io/nicholasBielecki/todo")
-.then(responce => newData = responce)
-.catch(error => console.log(`${error} \n you messed up bro`))
-
 
 let newData = ""
 let counter = 2
-
 const form = document.nameForm1
+const mainDiv = document.getElementById("mainDiv")
+const newInput = document.createElement("input")
+const newDiv = document.createElement("div")
 
+axiosGet()
+
+//submit button
 form.addEventListener("submit", (event) => {
-console.log(form.input1.value)
     event.preventDefault()
     counter ++
 
@@ -17,31 +17,38 @@ console.log(form.input1.value)
         title: counter,
         description: form.input1.value
     }
-    
 
-//todo api stuff
-axios.post("https://api.vschool.io/nicholasBielecki/todo", newApi)
+    clear()
+    form.input1.value = ""
 
-axios.get("https://api.vschool.io/nicholasBielecki/todo")
-.then(responce => newData = responce)
-.catch(error => console.log(`${error} \n you messed up bro`))
-
-
-//for loop and update function
-    for(i=0; i<newData.data.length; i++){
-        console.log(i)
-        console.log(newData)
-        update(newData.data[i].description)
-    }
-    
-
+    axios.post("https://api.vschool.io/nicholasBielecki/todo", newApi)
+    .then(() => axiosGet())
+    .catch(error => console.log(error))
 })
 
-
-
-
-
-function update (param1){
-    let newDiv = document.createElement("div").textContent = param1
-    document.body.append(newDiv)
+//clear and delete
+function clear (){
+    while(mainDiv.firstChild){
+        mainDiv.removeChild(mainDiv.firstChild)
+    }
 }
+
+
+
+//axios stuff
+function axiosGet(){
+    axios.get("https://api.vschool.io/nicholasBielecki/todo")
+    .then(responce => {newData = responce
+
+    for(i=0;i<newData.data.length; i++){
+        mainDiv.append(newDiv.textContent = newData.data[i].description)
+        mainDiv.append(newInput)
+        newInput.setAttribute('type', 'checkbox')
+        mainDiv.append(document.createElement("br"))
+        
+       
+        
+    }})
+    .catch(error => console.log(error))
+}
+
