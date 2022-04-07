@@ -1,10 +1,5 @@
-
-let newData = ""
 let counter = 2
 const form = document.nameForm1
-const mainDiv = document.getElementById("mainDiv")
-const newInput = document.createElement("input")
-const newDiv = document.createElement("div")
 
 axiosGet()
 
@@ -26,28 +21,47 @@ form.addEventListener("submit", (event) => {
     .catch(error => console.log(error))
 })
 
-//clear and delete
+//clear 
 function clear (){
-    while(mainDiv.firstChild){
-        mainDiv.removeChild(mainDiv.firstChild)
+    while(container.firstChild){
+        container.removeChild(container.firstChild)
     }
 }
 
-
-
-//axios stuff
+//axios get
 function axiosGet(){
+    clear()
     axios.get("https://api.vschool.io/nicholasBielecki/todo")
-    .then(responce => {newData = responce
+    .then(responce => {
+        let newData = responce
+        console.log(newData)
+    for(i=0;i<responce.data.length; i++){
+        const newli = document.createElement("li")
+        const newInput = document.createElement("input")
+        const container = document.getElementById("container")
+        let ivar = i
 
-    for(i=0;i<newData.data.length; i++){
-        mainDiv.append(newDiv.textContent = newData.data[i].description)
-        mainDiv.append(newInput)
-        newInput.setAttribute('type', 'checkbox')
-        mainDiv.append(document.createElement("br"))
+        newInput.setAttribute("type", "button")
+        newInput.value = "completed"
+        newInput.addEventListener("click", ()=>{
+            axios.put(`https://api.vschool.io/nicholasBielecki/todo/${newData.data[ivar]._id}`, {completed: true})
+            .then(axiosGet())
+            .catch(error=>error)
+        })
+
         
-       
+
+if(responce.data[i].completed === false){
+    newli.setAttribute("style", "text-decoration: line-through")}
+
+        newli.textContent= responce.data[i].description
         
+        container.appendChild(newli)
+        newli.appendChild(newInput)
+
+        
+        
+             
     }})
     .catch(error => console.log(error))
 }
