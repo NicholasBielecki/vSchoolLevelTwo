@@ -75,7 +75,6 @@ function axiosGet(){
             container.appendChild(newli)
             newli.appendChild(newInput)
             newli.appendChild(deleteButton)
-            newli.appendChild(editButton)
             newli.appendChild(newPic)
 
         
