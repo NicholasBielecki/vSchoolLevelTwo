@@ -1,0 +1,22 @@
+body{background-color: lightgoldenrodyellow;}
+
+
+
+
+.imageClass{
+    width: 20%;
+    height: 20%;
+}
+#htmlContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/* .center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+} */
